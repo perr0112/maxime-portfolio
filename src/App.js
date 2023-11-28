@@ -2,8 +2,9 @@ import './stylesheet/reset.scss';
 
 import BasePage from './BasePage';
 import About from './components/About/About';
+import ErrorRoute from './ErrorRoute';
 
-import { Routes, BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
@@ -17,6 +18,11 @@ function App() {
           />
           <Route path="/portfolio"
             element={<BasePage></BasePage>}
+          />
+          <Route path="*"
+          element={<BasePage>
+              <ErrorRoute />
+            </BasePage>}
           />
         </Routes>
     </BrowserRouter>
