@@ -17,11 +17,21 @@
   --xl-sizing: 64px;
   --xxl-sizing: 120px;
 
+  // transitions
+  --transition-cubic: .5s cubic-bezier(.5, 0, 0, 1);
+
+  // font-sizes
+  /////////////
+  
+  // h1
+  --font-size-xl: clamp(24px, 5vw, 60px);
+
   --main-font-family: 'Montserrat', sans-serif;
 }
 
 * {
   font-family: var(--main-font-family);
+  color: var(--whiteColor);
 }
 
 div.basepage {
@@ -32,8 +42,38 @@ div.basepage {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media screen and (max-width: 1000px) {
+    padding-inline: var(--m-sizing);
+  }
 }
 
 a {
   text-decoration: none;
+}
+
+/* components */
+///////////////
+
+// buttons
+
+.btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  transition: .25s ease-in-out;
+}
+
+.btn-primary {
+  background: var(--background-gradient-button-red);
+}
+
+.btn-secondary {
+  background: var(--background-gradient-button-blue);
+}
+
+.btn:hover {
+  opacity: 0.8;
 }

@@ -1,0 +1,58 @@
+div.about {
+    margin-top: 75px;
+    padding: var(--m-sizing);
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+
+    .main-infos {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .titles {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            gap: 20px;
+
+            h1 {
+                font-size: var(--font-size-xl);
+            }
+        }
+    }
+
+    .following-infos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        img {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .buttons {
+            padding: 40px;
+            display: flex;
+            gap: 10px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}

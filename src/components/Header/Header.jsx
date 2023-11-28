@@ -25,6 +25,7 @@ export default function Header() {
                     <a href="/#contact">Contact</a>
                 </li>
             </ul>
+            <button className="btn btn-primary">Menu</button>
         </div>
     </div>
   )
