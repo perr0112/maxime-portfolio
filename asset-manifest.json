@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/maxime-portfolio/static/css/main.8c8179e7.css",
-    "main.js": "/maxime-portfolio/static/js/main.035c200e.js",
+    "main.js": "/maxime-portfolio/static/js/main.c96421fe.js",
     "static/js/787.917857b7.chunk.js": "/maxime-portfolio/static/js/787.917857b7.chunk.js",
     "static/media/profil.png": "/maxime-portfolio/static/media/profil.edb12922fd8cf02a6eb1.png",
     "static/media/qui-suis-je.png": "/maxime-portfolio/static/media/qui-suis-je.e0c85ed63430491e5120.png",
     "static/media/logo.svg": "/maxime-portfolio/static/media/logo.1223ec2c0a2b5e4fa0c58c2c31c1075f.svg",
     "index.html": "/maxime-portfolio/index.html",
     "main.8c8179e7.css.map": "/maxime-portfolio/static/css/main.8c8179e7.css.map",
-    "main.035c200e.js.map": "/maxime-portfolio/static/js/main.035c200e.js.map",
+    "main.c96421fe.js.map": "/maxime-portfolio/static/js/main.c96421fe.js.map",
     "787.917857b7.chunk.js.map": "/maxime-portfolio/static/js/787.917857b7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8c8179e7.css",
-    "static/js/main.035c200e.js"
+    "static/js/main.c96421fe.js"
   ]
 }
