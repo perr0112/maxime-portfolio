@@ -1,9 +1,22 @@
 import './stylesheet/reset.scss';
 
+import BasePage from './BasePage';
+
+import { Routes, BrowserRouter, Route } from 'react-router-dom';
+
 function App() {
   return (
     <div className="App">
-      <h1>Basic works!</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/"
+            element={<BasePage></BasePage>}
+          />
+          <Route path="/portfolio"
+            element={<BasePage></BasePage>}
+          />
+        </Routes>
+    </BrowserRouter>
     </div>
   );
 }

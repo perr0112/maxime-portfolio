@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
   --whiteColor: white;
-  
+  --blackColor: black;
+
+  --background-gradient-button-red: linear-gradient(90deg, #C03232 0%, #FF6969 100%);
+  --background-gradient-button-blue: linear-gradient(90deg, #3249C0 0%, #69A5FF 100%);
+  --background-gradient-button-green: linear-gradient(90deg, #228300 0%, #82D93D 100%);
+  --background-gradient-button-orange-rose: linear-gradient(90deg, #BD8A06 0%, #D93DD3 100%);
+
   // sizing
   --xs-sizing: 8px;
   --s-sizing: 16px;
@@ -8,4 +16,24 @@
   --l-sizing: 32px;
   --xl-sizing: 64px;
   --xxl-sizing: 120px;
+
+  --main-font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  font-family: var(--main-font-family);
+}
+
+div.basepage {
+  padding-block: var(--l-sizing);
+  min-height: 100vh;
+  width: calc(100vw);
+  padding-inline: var(--xl-sizing);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
 }
