@@ -3,7 +3,23 @@ import './About.scss';
 import profil from '../../assets/img/profil.png';
 import banner from '../../assets/img/qui-suis-je.png';
 
+import { dataTestimonials } from '../data/testimonials';
+
 import React from 'react';
+
+function Card({ infos }) {
+    return (
+        <div className='card'>
+            <div className='card-header'>
+                <h3>{infos.name}</h3>
+                <p>{infos.title} - {infos.company}</p>
+            </div>
+            <div className='card-body'>
+                <p>{infos.content}</p>
+            </div>
+        </div>
+    )
+}
 
 export default function About() {
   return (
@@ -18,7 +34,10 @@ export default function About() {
                     Créateur passionné, je donne vie à des réalisations uniques.
                 </p>
             </div>
-            <img src={profil} alt='profil' />
+            <div className='img-container'>
+                <img src={profil} alt='profil' />
+                <div className="elipse"></div>
+            </div>
         </div>
         <div className='following-infos'>
             <p>À propos</p>
@@ -30,15 +49,9 @@ export default function About() {
             <div className='testimonials'>
                 <p>Quelle a été leur impression ?</p>
                 <div className="cards">
-                    <div className="card">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, nihil minima accusantium cumque error quasi. Laboriosam similique eveniet voluptas in autem quis exercitationem impedit ratione unde, minus deleniti amet praesentium?
-                    </div>
-                    <div className="card">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, nihil minima accusantium cumque error quasi. Laboriosam similique eveniet voluptas in autem quis exercitationem impedit ratione unde, minus deleniti amet praesentium?
-                    </div>
-                    <div className="card">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, nihil minima accusantium cumque error quasi. Laboriosam similique eveniet voluptas in autem quis exercitationem impedit ratione unde, minus deleniti amet praesentium?
-                    </div>
+                    {dataTestimonials.map((testimonial, index) => (
+                        <Card infos={testimonial} key={index} />
+                    ))}
                 </div>
             </div>
         </div>

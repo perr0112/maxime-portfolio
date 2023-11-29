@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <div className='header'>
         <div className='logo'>
-            <a href="/">
+            <a href="/maxime-portfolio">
                 <img src={logo} alt='logo' />
                 <h1>Bymax</h1>
             </a>
@@ -16,10 +16,10 @@ export default function Header() {
         <div className='navbar-menu'>
             <ul>
                 <li>
-                    <a href="/portfolio">Portfolio</a>
+                    <a href={`maxime-portfolio/portfolio`}>Portfolio</a>
                 </li>
                 <li>
-                    <a href="/#services">Services</a>
+                    <a href="/maxime-portfolio#services">Services</a>
                 </li>
                 <li>
                     <a href="/#contact">Contact</a>

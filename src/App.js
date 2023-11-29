@@ -3,13 +3,14 @@ import './stylesheet/reset.scss';
 import BasePage from './BasePage';
 import About from './components/About/About';
 import ErrorRoute from './ErrorRoute';
+import Portfolio from './components/Portfolio/Portfolio';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
         <Routes>
           <Route path="/"
             element={<BasePage>
@@ -17,7 +18,9 @@ function App() {
             </BasePage>}
           />
           <Route path="/portfolio"
-            element={<BasePage></BasePage>}
+            element={<BasePage>
+              <Portfolio />
+            </BasePage>}
           />
           <Route path="*"
           element={<BasePage>

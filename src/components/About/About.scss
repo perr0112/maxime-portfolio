@@ -7,11 +7,45 @@ div.about {
 
     .main-infos {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: end;
 
-        img {
-            max-width: 400px;
-            width: 100%;
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .img-container {
+            position: relative;
+            img {
+                max-width: 100%;
+                width: 400px;
+                min-width: 200px;
+                height: auto;
+                position: relative;
+                z-index: 9;
+
+                @media screen and (max-width: 1000px) {
+                    max-width: 200px;
+                }
+            }
+            .elipse {
+                background-color: #FF6969;
+                width: 300px;
+                height: 300px;
+                position: absolute;
+                top: 0;
+                filter: blur(180px);
+
+                @media screen and (max-width: 1000px) {
+                    width: 150px;
+                    height: 150px;
+                    filter: blur(100px);
+                }
+            }
         }
 
         .titles {
@@ -19,6 +53,8 @@ div.about {
             flex-direction: column;
             justify-content: end;
             gap: 20px;
+            flex: 1;
+            width: 100%;
 
             h1 {
                 font-size: var(--font-size-xl);
@@ -38,21 +74,62 @@ div.about {
         }
 
         .buttons {
+            margin-block: 50px;
             padding: 40px;
             display: flex;
             gap: 10px;
         }
+
+        .testimonials {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            width: 100%;
+            margin-bottom: 150px;
+
+            .cards {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                max-width: 100%;
+                gap: 20px;
+
+                .card {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    width: 100%;
+                    border-radius: 20px;
+                    max-width: 350px;
+                    background-color: var(--cardColor);
+                    padding: 40px;
+
+                    .card-header {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: end;
+                        margin-top: 40px;
+                        gap: 4px;
+
+                        h3 {
+                            font-size: var(--s-sizing);
+                        }
+
+                        p {
+                            font-size: var(--xs-sizing);
+                        }
+                    }
+
+                    .card-body {
+                        p {
+                            color: var(--cardColorBody);
+                        }
+                    }
+                }
+            }
+        }
     }
-
-
-
-
-
-
-
-
-
-
-
 
 }

@@ -3,6 +3,8 @@
 :root {
   --whiteColor: white;
   --blackColor: black;
+  --cardColor: #1D1D1D;
+  --cardColorBody: #777777;
 
   --background-gradient-button-red: linear-gradient(90deg, #C03232 0%, #FF6969 100%);
   --background-gradient-button-blue: linear-gradient(90deg, #3249C0 0%, #69A5FF 100%);
@@ -10,7 +12,8 @@
   --background-gradient-button-orange-rose: linear-gradient(90deg, #BD8A06 0%, #D93DD3 100%);
 
   // sizing
-  --xs-sizing: 8px;
+  --xxs-sizing: 8px;
+  --xs-sizing: 12px;
   --s-sizing: 16px;
   --m-sizing: 24px;
   --l-sizing: 32px;
