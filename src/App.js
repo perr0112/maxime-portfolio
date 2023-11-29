@@ -4,6 +4,7 @@ import BasePage from './BasePage';
 import About from './components/About/About';
 import ErrorRoute from './ErrorRoute';
 import Portfolio from './components/Portfolio/Portfolio';
+import Services from './components/Services/Services';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
