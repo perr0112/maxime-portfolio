@@ -76,4 +76,8 @@ export const branding = [
         name: "branding",
         path: "branding/1.png"
     },
+    {
+        name: "branding",
+        path: "branding/1.png"
+    },
 ]

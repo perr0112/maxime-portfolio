@@ -27,6 +27,7 @@ export default function Header() {
             </ul>
             <button className="btn btn-primary">Menu</button>
         </div>
+        <div className="elipse"></div>
     </div>
   )
 }

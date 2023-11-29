@@ -32,20 +32,6 @@ div.about {
                     max-width: 200px;
                 }
             }
-            .elipse {
-                background-color: #FF6969;
-                width: 300px;
-                height: 300px;
-                position: absolute;
-                top: 0;
-                filter: blur(180px);
-
-                @media screen and (max-width: 1000px) {
-                    width: 150px;
-                    height: 150px;
-                    filter: blur(100px);
-                }
-            }
         }
 
         .titles {

@@ -22,6 +22,11 @@ function App() {
               <Portfolio />
             </BasePage>}
           />
+          <Route path="/services"
+            element={<BasePage>
+              <Services />
+            </BasePage>}
+          />
           <Route path="*"
           element={<BasePage>
               <ErrorRoute />

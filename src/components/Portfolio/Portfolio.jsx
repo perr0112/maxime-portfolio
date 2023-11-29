@@ -34,6 +34,7 @@ export default function Portfolio() {
   return (
     <div className='portfolio'>
         <div className='header-portfolio'>
+            <div className="elipse"></div>
             <h1>Portfolio</h1>
             <div className='buttons'>
             {tagsAvalaible.map((tag, index) => (

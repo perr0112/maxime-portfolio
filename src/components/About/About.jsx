@@ -36,7 +36,6 @@ export default function About() {
             </div>
             <div className='img-container'>
                 <img src={profil} alt='profil' />
-                <div className="elipse"></div>
             </div>
         </div>
         <div className='following-infos'>
