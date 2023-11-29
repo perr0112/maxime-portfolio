@@ -1,11 +1,15 @@
 div.footer {
 
-    margin-bottom: 100px;
+    margin-bottom: 25px;
     
     .infos-footer {
         display: flex;
         justify-content: center;
         gap: 20px;
+
+        a:hover {
+            color: var(--lightGray);
+        }
 
         @media screen and (max-width: 1000px) {
             font-size: var(--xs-sizing);

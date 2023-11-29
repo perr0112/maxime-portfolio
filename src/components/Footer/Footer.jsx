@@ -6,11 +6,11 @@ export default function Footer() {
   return (
     <div className='footer'>
       <div className="infos-footer">
-        <p>© 2023 Bymax</p>
+        <a href="#">© 2023 Bymax</a>
         <span>-</span>
-        <p>Politique de confidentialité</p>
+        <a href="#">Politique de confidentialité</a>
         <span>-</span>
-        <p>Tous droits réservés</p>
+        <a href="#">Tous droits réservés</a>
       </div>
     </div>
   )

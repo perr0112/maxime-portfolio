@@ -1,0 +1,98 @@
+div.portfolio {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    margin-block: 50px;
+
+    .header-portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+
+            p {
+                color: var(--whiteColor);
+                display: inline;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+
+                &.active {
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        bottom: -4px;
+                        background: var(--whiteColor);
+                        height: 1px;
+                    }
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    width: 0;
+                    bottom: -4px;
+                    background: var(--whiteColor);
+                    height: 1px;
+                    transition-property: width;
+                    transition-duration: 0.3s;
+                    transition-timing-function: ease-out;
+                }
+                &:hover::after, &:focus::after {
+                    left: 0;
+                    right: auto;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .data {
+        min-height: 100vh;
+        display: flex;
+        margin-top: 50px;
+        justify-content: center;
+
+        p {
+            color: var(--cardColorBody);
+        }
+
+        .images {
+            //min-height: 100vh;
+            height: max-content;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+
+            .img {
+                max-width: 33%;
+                height: max-content;
+
+                img {
+                
+                    &.miniature {
+                        
+                    }
+                    &.affiche {
+    
+                    }
+                    &.branding {
+                        
+                    }
+                }
+            }
+           
+        }
+    }
+}

@@ -16,13 +16,13 @@ export default function Header() {
         <div className='navbar-menu'>
             <ul>
                 <li>
-                    <a href={`maxime-portfolio/portfolio`}>Portfolio</a>
+                    <a href={`${process.env.PUBLIC_URL}/portfolio`}>Portfolio</a>
                 </li>
                 <li>
-                    <a href="/maxime-portfolio#services">Services</a>
+                    <a href={`${process.env.PUBLIC_URL}/services`}>Services</a>
                 </li>
                 <li>
-                    <a href="/#contact">Contact</a>
+                    <a href={`${process.env.PUBLIC_URL}/contact`}>Contact</a>
                 </li>
             </ul>
             <button className="btn btn-primary">Menu</button>
