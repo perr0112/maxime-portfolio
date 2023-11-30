@@ -58,7 +58,7 @@ div.header {
                     transition-duration: 0.3s;
                     transition-timing-function: ease-out;
                 }
-                &:hover::after, &:focus::after {
+                &:hover::after {
                     left: 0;
                     right: auto;
                     width: 100%;

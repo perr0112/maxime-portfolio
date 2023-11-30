@@ -17,7 +17,7 @@ export default function Header() {
         <div className='navbar-menu'>
             <ul>
                 <li>
-                    <Link to="/portfolio">Portf</Link>
+                    <Link to="/portfolio">Portfolio</Link>
                 </li>
                 <li>
                     <Link to="/services">Services</Link>
