@@ -3,6 +3,7 @@ import './Header.scss';
 import React from 'react';
 
 import logo from '../../assets/img/logo.svg';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
@@ -16,13 +17,13 @@ export default function Header() {
         <div className='navbar-menu'>
             <ul>
                 <li>
-                    <a href={`${process.env.PUBLIC_URL}/portfolio`}>Portfolio</a>
+                    <Link to="/portfolio">Portf</Link>
                 </li>
                 <li>
-                    <a href={`${process.env.PUBLIC_URL}/services`}>Services</a>
+                    <Link to="/services">Services</Link>
                 </li>
                 <li>
-                    <a href={`${process.env.PUBLIC_URL}/contact`}>Contact</a>
+                    <Link to="/services">Contact</Link>
                 </li>
             </ul>
             <button className="btn btn-primary">Menu</button>

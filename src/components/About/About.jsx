@@ -3,6 +3,8 @@ import './About.scss';
 import profil from '../../assets/img/profil.png';
 import banner from '../../assets/img/qui-suis-je.png';
 
+import { Link } from 'react-router-dom';
+
 import { dataTestimonials } from '../data/testimonials';
 
 import React from 'react';
@@ -42,7 +44,9 @@ export default function About() {
             <p>À propos</p>
             <img src={banner} alt='banner' />
             <div className="buttons">
-                <button className="btn btn-primary">Voir mon portfolio</button>
+                <button className="btn btn-primary">
+                    <Link to="/portfolio">Voir mon portfolio</Link>
+                </button>
                 <button className="btn btn-secondary">Behance</button>
             </div>
             <div className='testimonials'>
