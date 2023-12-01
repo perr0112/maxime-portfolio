@@ -10,6 +10,7 @@ div.about {
         justify-content: space-evenly;
         flex-direction: row;
         align-items: end;
+        max-width: 1400px;
 
         @media screen and (max-width: 1000px) {
             flex-direction: column;
