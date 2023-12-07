@@ -7,6 +7,8 @@ div.header {
 
     @media screen and (max-width: 1000px) {
         width: 100%;
+        flex-direction: column;
+        gap: 40px;
     }
 
     div.logo {
@@ -35,9 +37,9 @@ div.header {
             display: flex;
             gap: 50px;
 
-            @media screen and (max-width: 1000px) {
+            /*@media screen and (max-width: 1000px) {
                 display: none;
-            }
+            }*/
 
             li a {
                 color: var(--whiteColor);
@@ -66,12 +68,12 @@ div.header {
             }
         }
 
-        button.btn {
+        /* button.btn {
             display: none;
             @media screen and (max-width: 1000px) {
                 display: block;
             }
-        }
+        } */
     }
 
 

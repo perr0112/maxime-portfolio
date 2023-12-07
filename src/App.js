@@ -5,6 +5,7 @@ import About from './components/About/About';
 import ErrorRoute from './ErrorRoute';
 import Portfolio from './components/Portfolio/Portfolio';
 import Services from './components/Services/Services';
+import Contact from './components/Contact/Contact';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -25,6 +26,11 @@ function App() {
           <Route path="/services"
             element={<BasePage>
               <Services />
+            </BasePage>}
+          />
+          <Route path="/contact"
+            element={<BasePage>
+              <Contact />
             </BasePage>}
           />
           <Route path="*"

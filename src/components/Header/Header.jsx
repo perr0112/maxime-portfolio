@@ -23,10 +23,10 @@ export default function Header() {
                     <Link to="/services">Services</Link>
                 </li>
                 <li>
-                    <Link to="/services">Contact</Link>
+                    <Link to="/contact">Contact</Link>
                 </li>
             </ul>
-            <button className="btn btn-primary">Menu</button>
+            {/* <button className="btn btn-primary">Menu</button> */}
         </div>
         <div className="elipse"></div>
     </div>

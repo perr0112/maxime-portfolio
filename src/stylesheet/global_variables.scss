@@ -11,8 +11,10 @@
 
   --background-gradient-button-red: linear-gradient(90deg, #C03232 0%, #FF6969 100%);
   --background-gradient-button-blue: linear-gradient(90deg, #3249C0 0%, #69A5FF 100%);
-  --background-gradient-button-green: linear-gradient(90deg, #228300 0%, #82D93D 100%);
-  --background-gradient-button-orange-rose: linear-gradient(90deg, #BD8A06 0%, #D93DD3 100%);
+
+  --background-gradient-whatsapp: linear-gradient(90deg, #228300 0%, #82D93D 100%);
+  --background-gradient-twitter: linear-gradient(90deg, #005B83 0%, #3DB3D9 100%);
+  --background-gradient-instagram: linear-gradient(90deg, #BD8A06 0%, #D93DD3 100%);
 
   // sizing
   --xxs-sizing: 8px;
@@ -68,9 +70,13 @@ a {
   cursor: pointer;
   border: none;
   outline: none;
-  border-radius: 20px;
+  border-radius: 30px;
   transition: .25s ease-in-out;
-  font-size: var(--m-sizing);
+  font-size: var(--s-sizing);
+}
+
+.full-w {
+  width: 100%;
 }
 
 .btn-primary {
@@ -79,6 +85,18 @@ a {
 
 .btn-secondary {
   background: var(--background-gradient-button-blue);
+}
+
+.btn-whatsapp {
+  background: var(--background-gradient-whatsapp);
+}
+
+.btn-twitter {
+  background: var(--background-gradient-twitter);
+}
+
+.btn-instagram {
+  background: var(--background-gradient-instagram);
 }
 
 .btn-third {
