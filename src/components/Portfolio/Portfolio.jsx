@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { tagsAvalaible, miniatures, affiches, branding } from '../data/portfolio';
 import './Portfolio.scss';
 
+import transition from '../data/transition';
+
 const dataByTag = {
   miniature: miniatures,
   affiche: affiches,
@@ -16,7 +18,7 @@ function Tag({ infos, setActiveTag, active }) {
   );
 }
 
-export default function Portfolio() {
+function Portfolio() {
   const [activeTag, setActiveTag] = useState(tagsAvalaible[0].tag);
   const [data, setData] = useState(dataByTag[tagsAvalaible[0].tag]);
   const [isLoading, setIsLoading] = useState(false);
@@ -63,3 +65,5 @@ export default function Portfolio() {
     </div>
   );
 }
+
+export default transition(Portfolio);

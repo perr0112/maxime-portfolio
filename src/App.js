@@ -7,11 +7,14 @@ import Portfolio from './components/Portfolio/Portfolio';
 import Services from './components/Services/Services';
 import Contact from './components/Contact/Contact';
 
+import { AnimatePresence } from 'framer-motion';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
+      <AnimatePresence mode='wait'>
         <Routes>
           <Route path="/"
             element={<BasePage>
@@ -39,6 +42,7 @@ function App() {
             </BasePage>}
           />
         </Routes>
+      </AnimatePresence>
     </div>
   );
 }

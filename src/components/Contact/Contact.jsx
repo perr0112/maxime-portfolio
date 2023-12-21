@@ -3,7 +3,9 @@ import './Contact.scss'
 import React from 'react'
 import img from '../../assets/img/contact/pdp.png'
 
-export default function Contact() {
+import transition from '../data/transition'
+
+function Contact() {
   return (
     <div className='contact'>
 
@@ -29,3 +31,5 @@ export default function Contact() {
     </div>
   )
 }
+
+export default transition(Contact);

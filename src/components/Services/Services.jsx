@@ -3,10 +3,11 @@ import './Services.scss'
 import React from 'react'
 
 import { dataServices } from '../data/services'
+import transition from '../data/transition'
 
 function Card({ infos }) {
     return (
-        <div className="card">
+        <div className={`card ${infos.top ? 'top' : ''}`}>
             <div className="card-header">
                 <h3>{infos.name}</h3>
                 <span>{infos.alias}</span>
@@ -36,7 +37,7 @@ function Card({ infos }) {
     )
 }
 
-export default function Services() {
+function Services() {
   return (
     <div className='services'>
         <div className="infos-services">
@@ -52,3 +53,5 @@ export default function Services() {
     </div>
   )
 }
+
+export default transition(Services);
