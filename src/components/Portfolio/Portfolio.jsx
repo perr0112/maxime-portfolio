@@ -66,4 +66,4 @@ function Portfolio() {
   );
 }
 
-export default transition(Portfolio);
+export default Portfolio;

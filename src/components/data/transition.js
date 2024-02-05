@@ -1,4 +1,4 @@
-/* import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const transition = (OgComponent) => {
     return () => {
@@ -6,69 +6,20 @@ const transition = (OgComponent) => {
             <OgComponent />
             <motion.div
                 className="slide-in"
-                initial={{scaleY: 0}}
-                animate={{scaleY: 1}}
-                exit={{scaleY: 0}}
-                transition={{duration: 1, ease: [0.22, 1, 0.36, 1]}}
+                initial={{ scaleY: 0 }}
+                animate={{ scaleY: 0 }}
+                exit={{ scaleY: 1 }}
+                transition={{ duration: 1 }}
             />
             <motion.div
                 className="slide-out"
-                initial={{scaleY: 1}}
-                animate={{scaleY: 0}}
-                exit={{scaleY: 0}}
-                transition={{duration: 1, ease: [0.22, 1, 0.36, 1]}}
+                initial={{ scaleY: 1 }}
+                animate={{ scaleY: 0 }}
+                exit={{ scaleY: 0 }}
+                transition={{ duration: 1 }}
             />
         </>
     }
 }
-
-
-export default transition;
-
-
-import { motion } from "framer-motion";
-
-const transition = (OgComponent) => {
-    return () => (
-        <>
-            <motion.div
-                className="transition-container"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.5 }}
-            >
-                <OgComponent />
-            </motion.div>
-        </>
-    );
-};
-
-export default transition;
-*/
-
-import { motion } from "framer-motion";
-
-const transition = (OgComponent) => {
-    return () => (
-        <>
-            <motion.div
-                className="slide-in"
-                initial={{ scaleY: 1 }}
-                animate={{ scaleY: 0 }}
-                exit={{ scaleY: 0 }}
-                transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            />
-            <OgComponent />
-            <motion.div
-                className="slide-out"
-                initial={{ scaleY: 0 }}
-                animate={{ scaleY: 1 }}
-                exit={{ scaleY: 0 }}
-                transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            />
-        </>
-    );
-};
 
 export default transition;

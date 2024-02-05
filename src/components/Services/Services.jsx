@@ -54,4 +54,4 @@ function Services() {
   )
 }
 
-export default transition(Services);
+export default Services;

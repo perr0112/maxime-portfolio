@@ -33,3 +33,4 @@ function Contact() {
 }
 
 export default transition(Contact);
+//export default Contact;
