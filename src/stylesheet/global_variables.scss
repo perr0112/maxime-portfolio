@@ -27,6 +27,7 @@
 
   // transitions
   --transition-cubic: .5s cubic-bezier(.5, 0, 0, 1);
+  --transition-background-color: red;
 
   // font-sizes
   /////////////
@@ -136,8 +137,9 @@ a {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: red;
+  background: var(--transition-background-color);
   transform-origin: bottom;
+  z-index: 999;
 }
 
 .slide-out {
@@ -146,8 +148,9 @@ a {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: green;
+  background: var(--transition-background-color);
   transform-origin: top;
+  z-index: 999;
 }
 
 li {
