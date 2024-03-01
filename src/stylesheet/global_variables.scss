@@ -27,7 +27,7 @@
 
   // transitions
   --transition-cubic: .5s cubic-bezier(.5, 0, 0, 1);
-  --transition-background-color: red;
+  --transition-background-color: black;
 
   // font-sizes
   /////////////
@@ -74,6 +74,7 @@ a {
   border-radius: 30px;
   transition: .25s ease-in-out;
   font-size: var(--s-sizing);
+  text-align: center;
 }
 
 .full-w {
