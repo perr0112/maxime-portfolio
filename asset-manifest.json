@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/maxime-portfolio/static/css/main.c483e714.css",
-    "main.js": "/maxime-portfolio/static/js/main.e31046dd.js",
+    "main.css": "/maxime-portfolio/static/css/main.9da0f3ce.css",
+    "main.js": "/maxime-portfolio/static/js/main.3d93c66a.js",
     "static/js/787.917857b7.chunk.js": "/maxime-portfolio/static/js/787.917857b7.chunk.js",
     "static/media/profil.png": "/maxime-portfolio/static/media/profil.edb12922fd8cf02a6eb1.png",
     "static/media/qui-suis-je.png": "/maxime-portfolio/static/media/qui-suis-je.e0c85ed63430491e5120.png",
     "static/media/pdp.png": "/maxime-portfolio/static/media/pdp.a5f3b8d1f7efa29a3b72.png",
     "static/media/logo.svg": "/maxime-portfolio/static/media/logo.1223ec2c0a2b5e4fa0c58c2c31c1075f.svg",
     "index.html": "/maxime-portfolio/index.html",
-    "main.c483e714.css.map": "/maxime-portfolio/static/css/main.c483e714.css.map",
-    "main.e31046dd.js.map": "/maxime-portfolio/static/js/main.e31046dd.js.map",
+    "main.9da0f3ce.css.map": "/maxime-portfolio/static/css/main.9da0f3ce.css.map",
+    "main.3d93c66a.js.map": "/maxime-portfolio/static/js/main.3d93c66a.js.map",
     "787.917857b7.chunk.js.map": "/maxime-portfolio/static/js/787.917857b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c483e714.css",
-    "static/js/main.e31046dd.js"
+    "static/css/main.9da0f3ce.css",
+    "static/js/main.3d93c66a.js"
   ]
 }
